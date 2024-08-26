@@ -1,0 +1,10 @@
+Set WshShell = CreateObject("WScript.Shell")
+
+Do While True
+    ' Simulate a harmless key press (e.g., F15, a rarely used key)
+    WshShell.SendKeys "{F15}"
+    WScript.Sleep 100 ' Wait 100 milliseconds
+    
+    ' Wait for a few minutes before sending the key again
+    WScript.Sleep 60000 * 4 ' Wait for 4 minutes (240,000 milliseconds)
+Loop
